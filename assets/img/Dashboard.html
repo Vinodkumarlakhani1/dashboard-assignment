@@ -1,0 +1,1878 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Responsive Bootstrap 5 Admin &amp; Dashboard Template">
+	<meta name="author" content="Bootlab">
+
+	<title> Dashboard</title>
+
+	<link rel="canonical" href="https://appstack.bootlab.io/dashboard-default.html">
+	<link rel="shortcut icon" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/img/favicon.ico">
+
+	<link href="./Dashboard_files/css2" rel="stylesheet">
+
+	<!-- Choose your prefered color scheme -->
+	<!-- <link href="css/light.css" rel="stylesheet"> -->
+	<!-- <link href="css/dark.css" rel="stylesheet"> -->
+
+	<!-- BEGIN SETTINGS -->
+	<!-- Remove this after purchasing -->
+	<link class="js-stylesheet" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/css/light.css" rel="stylesheet">
+	<link class="js-stylesheet" href="./Dashboard_files/light.css" rel="stylesheet">
+
+	<script src="./Dashboard_files/settings.js.download"></script>
+	<!-- END SETTINGS -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:2120269,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script><script async="" src="./Dashboard_files/hotjar-2120269.js.download"></script><script async="" src="./Dashboard_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Q3ZYEKLQ68');
+</script><script async="" src="./Dashboard_files/modules.e95f6e2deb67f1b24d8e.js.download" charset="utf-8"></script><style type="text/css">iframe#_hjRemoteVarsFrame {display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;}</style><style type="text/css">.apexcharts-canvas {
+  position: relative;
+  user-select: none;
+  /* cannot give overflow: hidden as it will crop tooltips which overflow outside chart area */
+}
+
+
+/* scrollbar is not visible by default for legend, hence forcing the visibility */
+.apexcharts-canvas ::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 6px;
+}
+
+.apexcharts-canvas ::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, .5);
+  box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+}
+
+
+.apexcharts-inner {
+  position: relative;
+}
+
+.apexcharts-text tspan {
+  font-family: inherit;
+}
+
+.legend-mouseover-inactive {
+  transition: 0.15s ease all;
+  opacity: 0.20;
+}
+
+.apexcharts-series-collapsed {
+  opacity: 0;
+}
+
+.apexcharts-tooltip {
+  border-radius: 5px;
+  box-shadow: 2px 2px 6px -4px #999;
+  cursor: default;
+  font-size: 14px;
+  left: 62px;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  white-space: nowrap;
+  z-index: 12;
+  transition: 0.15s ease all;
+}
+
+.apexcharts-tooltip.apexcharts-active {
+  opacity: 1;
+  transition: 0.15s ease all;
+}
+
+.apexcharts-tooltip.apexcharts-theme-light {
+  border: 1px solid #e3e3e3;
+  background: rgba(255, 255, 255, 0.96);
+}
+
+.apexcharts-tooltip.apexcharts-theme-dark {
+  color: #fff;
+  background: rgba(30, 30, 30, 0.8);
+}
+
+.apexcharts-tooltip * {
+  font-family: inherit;
+}
+
+
+.apexcharts-tooltip-title {
+  padding: 6px;
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.apexcharts-tooltip.apexcharts-theme-light .apexcharts-tooltip-title {
+  background: #ECEFF1;
+  border-bottom: 1px solid #ddd;
+}
+
+.apexcharts-tooltip.apexcharts-theme-dark .apexcharts-tooltip-title {
+  background: rgba(0, 0, 0, 0.7);
+  border-bottom: 1px solid #333;
+}
+
+.apexcharts-tooltip-text-y-value,
+.apexcharts-tooltip-text-goals-value,
+.apexcharts-tooltip-text-z-value {
+  display: inline-block;
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+.apexcharts-tooltip-text-y-label:empty,
+.apexcharts-tooltip-text-y-value:empty,
+.apexcharts-tooltip-text-goals-label:empty,
+.apexcharts-tooltip-text-goals-value:empty,
+.apexcharts-tooltip-text-z-value:empty {
+  display: none;
+}
+
+.apexcharts-tooltip-text-y-value,
+.apexcharts-tooltip-text-goals-value,
+.apexcharts-tooltip-text-z-value {
+  font-weight: 600;
+}
+
+.apexcharts-tooltip-text-goals-label, 
+.apexcharts-tooltip-text-goals-value {
+  padding: 6px 0 5px;
+}
+
+.apexcharts-tooltip-goals-group, 
+.apexcharts-tooltip-text-goals-label, 
+.apexcharts-tooltip-text-goals-value {
+  display: flex;
+}
+.apexcharts-tooltip-text-goals-label:not(:empty),
+.apexcharts-tooltip-text-goals-value:not(:empty) {
+  margin-top: -6px;
+}
+
+.apexcharts-tooltip-marker {
+  width: 12px;
+  height: 12px;
+  position: relative;
+  top: 0px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.apexcharts-tooltip-series-group {
+  padding: 0 10px;
+  display: none;
+  text-align: left;
+  justify-content: left;
+  align-items: center;
+}
+
+.apexcharts-tooltip-series-group.apexcharts-active .apexcharts-tooltip-marker {
+  opacity: 1;
+}
+
+.apexcharts-tooltip-series-group.apexcharts-active,
+.apexcharts-tooltip-series-group:last-child {
+  padding-bottom: 4px;
+}
+
+.apexcharts-tooltip-series-group-hidden {
+  opacity: 0;
+  height: 0;
+  line-height: 0;
+  padding: 0 !important;
+}
+
+.apexcharts-tooltip-y-group {
+  padding: 6px 0 5px;
+}
+
+.apexcharts-tooltip-box, .apexcharts-custom-tooltip {
+  padding: 4px 8px;
+}
+
+.apexcharts-tooltip-boxPlot {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.apexcharts-tooltip-box>div {
+  margin: 4px 0;
+}
+
+.apexcharts-tooltip-box span.value {
+  font-weight: bold;
+}
+
+.apexcharts-tooltip-rangebar {
+  padding: 5px 8px;
+}
+
+.apexcharts-tooltip-rangebar .category {
+  font-weight: 600;
+  color: #777;
+}
+
+.apexcharts-tooltip-rangebar .series-name {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.apexcharts-xaxistooltip {
+  opacity: 0;
+  padding: 9px 10px;
+  pointer-events: none;
+  color: #373d3f;
+  font-size: 13px;
+  text-align: center;
+  border-radius: 2px;
+  position: absolute;
+  z-index: 10;
+  background: #ECEFF1;
+  border: 1px solid #90A4AE;
+  transition: 0.15s ease all;
+}
+
+.apexcharts-xaxistooltip.apexcharts-theme-dark {
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.apexcharts-xaxistooltip:after,
+.apexcharts-xaxistooltip:before {
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.apexcharts-xaxistooltip:after {
+  border-color: rgba(236, 239, 241, 0);
+  border-width: 6px;
+  margin-left: -6px;
+}
+
+.apexcharts-xaxistooltip:before {
+  border-color: rgba(144, 164, 174, 0);
+  border-width: 7px;
+  margin-left: -7px;
+}
+
+.apexcharts-xaxistooltip-bottom:after,
+.apexcharts-xaxistooltip-bottom:before {
+  bottom: 100%;
+}
+
+.apexcharts-xaxistooltip-top:after,
+.apexcharts-xaxistooltip-top:before {
+  top: 100%;
+}
+
+.apexcharts-xaxistooltip-bottom:after {
+  border-bottom-color: #ECEFF1;
+}
+
+.apexcharts-xaxistooltip-bottom:before {
+  border-bottom-color: #90A4AE;
+}
+
+.apexcharts-xaxistooltip-bottom.apexcharts-theme-dark:after {
+  border-bottom-color: rgba(0, 0, 0, 0.5);
+}
+
+.apexcharts-xaxistooltip-bottom.apexcharts-theme-dark:before {
+  border-bottom-color: rgba(0, 0, 0, 0.5);
+}
+
+.apexcharts-xaxistooltip-top:after {
+  border-top-color: #ECEFF1
+}
+
+.apexcharts-xaxistooltip-top:before {
+  border-top-color: #90A4AE;
+}
+
+.apexcharts-xaxistooltip-top.apexcharts-theme-dark:after {
+  border-top-color: rgba(0, 0, 0, 0.5);
+}
+
+.apexcharts-xaxistooltip-top.apexcharts-theme-dark:before {
+  border-top-color: rgba(0, 0, 0, 0.5);
+}
+
+.apexcharts-xaxistooltip.apexcharts-active {
+  opacity: 1;
+  transition: 0.15s ease all;
+}
+
+.apexcharts-yaxistooltip {
+  opacity: 0;
+  padding: 4px 10px;
+  pointer-events: none;
+  color: #373d3f;
+  font-size: 13px;
+  text-align: center;
+  border-radius: 2px;
+  position: absolute;
+  z-index: 10;
+  background: #ECEFF1;
+  border: 1px solid #90A4AE;
+}
+
+.apexcharts-yaxistooltip.apexcharts-theme-dark {
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.apexcharts-yaxistooltip:after,
+.apexcharts-yaxistooltip:before {
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.apexcharts-yaxistooltip:after {
+  border-color: rgba(236, 239, 241, 0);
+  border-width: 6px;
+  margin-top: -6px;
+}
+
+.apexcharts-yaxistooltip:before {
+  border-color: rgba(144, 164, 174, 0);
+  border-width: 7px;
+  margin-top: -7px;
+}
+
+.apexcharts-yaxistooltip-left:after,
+.apexcharts-yaxistooltip-left:before {
+  left: 100%;
+}
+
+.apexcharts-yaxistooltip-right:after,
+.apexcharts-yaxistooltip-right:before {
+  right: 100%;
+}
+
+.apexcharts-yaxistooltip-left:after {
+  border-left-color: #ECEFF1;
+}
+
+.apexcharts-yaxistooltip-left:before {
+  border-left-color: #90A4AE;
+}
+
+.apexcharts-yaxistooltip-left.apexcharts-theme-dark:after {
+  border-left-color: rgba(0, 0, 0, 0.5);
+}
+
+.apexcharts-yaxistooltip-left.apexcharts-theme-dark:before {
+  border-left-color: rgba(0, 0, 0, 0.5);
+}
+
+.apexcharts-yaxistooltip-right:after {
+  border-right-color: #ECEFF1;
+}
+
+.apexcharts-yaxistooltip-right:before {
+  border-right-color: #90A4AE;
+}
+
+.apexcharts-yaxistooltip-right.apexcharts-theme-dark:after {
+  border-right-color: rgba(0, 0, 0, 0.5);
+}
+
+.apexcharts-yaxistooltip-right.apexcharts-theme-dark:before {
+  border-right-color: rgba(0, 0, 0, 0.5);
+}
+
+.apexcharts-yaxistooltip.apexcharts-active {
+  opacity: 1;
+}
+
+.apexcharts-yaxistooltip-hidden {
+  display: none;
+}
+
+.apexcharts-xcrosshairs,
+.apexcharts-ycrosshairs {
+  pointer-events: none;
+  opacity: 0;
+  transition: 0.15s ease all;
+}
+
+.apexcharts-xcrosshairs.apexcharts-active,
+.apexcharts-ycrosshairs.apexcharts-active {
+  opacity: 1;
+  transition: 0.15s ease all;
+}
+
+.apexcharts-ycrosshairs-hidden {
+  opacity: 0;
+}
+
+.apexcharts-selection-rect {
+  cursor: move;
+}
+
+.svg_select_boundingRect, .svg_select_points_rot {
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+}
+.apexcharts-selection-rect + g .svg_select_boundingRect,
+.apexcharts-selection-rect + g .svg_select_points_rot {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.apexcharts-selection-rect + g .svg_select_points_l,
+.apexcharts-selection-rect + g .svg_select_points_r {
+  cursor: ew-resize;
+  opacity: 1;
+  visibility: visible;
+}
+
+.svg_select_points {
+  fill: #efefef;
+  stroke: #333;
+  rx: 2;
+}
+
+.apexcharts-svg.apexcharts-zoomable.hovering-zoom {
+  cursor: crosshair
+}
+
+.apexcharts-svg.apexcharts-zoomable.hovering-pan {
+  cursor: move
+}
+
+.apexcharts-zoom-icon,
+.apexcharts-zoomin-icon,
+.apexcharts-zoomout-icon,
+.apexcharts-reset-icon,
+.apexcharts-pan-icon,
+.apexcharts-selection-icon,
+.apexcharts-menu-icon,
+.apexcharts-toolbar-custom-icon {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  line-height: 24px;
+  color: #6E8192;
+  text-align: center;
+}
+
+.apexcharts-zoom-icon svg,
+.apexcharts-zoomin-icon svg,
+.apexcharts-zoomout-icon svg,
+.apexcharts-reset-icon svg,
+.apexcharts-menu-icon svg {
+  fill: #6E8192;
+}
+
+.apexcharts-selection-icon svg {
+  fill: #444;
+  transform: scale(0.76)
+}
+
+.apexcharts-theme-dark .apexcharts-zoom-icon svg,
+.apexcharts-theme-dark .apexcharts-zoomin-icon svg,
+.apexcharts-theme-dark .apexcharts-zoomout-icon svg,
+.apexcharts-theme-dark .apexcharts-reset-icon svg,
+.apexcharts-theme-dark .apexcharts-pan-icon svg,
+.apexcharts-theme-dark .apexcharts-selection-icon svg,
+.apexcharts-theme-dark .apexcharts-menu-icon svg,
+.apexcharts-theme-dark .apexcharts-toolbar-custom-icon svg {
+  fill: #f3f4f5;
+}
+
+.apexcharts-canvas .apexcharts-zoom-icon.apexcharts-selected svg,
+.apexcharts-canvas .apexcharts-selection-icon.apexcharts-selected svg,
+.apexcharts-canvas .apexcharts-reset-zoom-icon.apexcharts-selected svg {
+  fill: #008FFB;
+}
+
+.apexcharts-theme-light .apexcharts-selection-icon:not(.apexcharts-selected):hover svg,
+.apexcharts-theme-light .apexcharts-zoom-icon:not(.apexcharts-selected):hover svg,
+.apexcharts-theme-light .apexcharts-zoomin-icon:hover svg,
+.apexcharts-theme-light .apexcharts-zoomout-icon:hover svg,
+.apexcharts-theme-light .apexcharts-reset-icon:hover svg,
+.apexcharts-theme-light .apexcharts-menu-icon:hover svg {
+  fill: #333;
+}
+
+.apexcharts-selection-icon,
+.apexcharts-menu-icon {
+  position: relative;
+}
+
+.apexcharts-reset-icon {
+  margin-left: 5px;
+}
+
+.apexcharts-zoom-icon,
+.apexcharts-reset-icon,
+.apexcharts-menu-icon {
+  transform: scale(0.85);
+}
+
+.apexcharts-zoomin-icon,
+.apexcharts-zoomout-icon {
+  transform: scale(0.7)
+}
+
+.apexcharts-zoomout-icon {
+  margin-right: 3px;
+}
+
+.apexcharts-pan-icon {
+  transform: scale(0.62);
+  position: relative;
+  left: 1px;
+  top: 0px;
+}
+
+.apexcharts-pan-icon svg {
+  fill: #fff;
+  stroke: #6E8192;
+  stroke-width: 2;
+}
+
+.apexcharts-pan-icon.apexcharts-selected svg {
+  stroke: #008FFB;
+}
+
+.apexcharts-pan-icon:not(.apexcharts-selected):hover svg {
+  stroke: #333;
+}
+
+.apexcharts-toolbar {
+  position: absolute;
+  z-index: 11;
+  max-width: 176px;
+  text-align: right;
+  border-radius: 3px;
+  padding: 0px 6px 2px 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.apexcharts-menu {
+  background: #fff;
+  position: absolute;
+  top: 100%;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  padding: 3px;
+  right: 10px;
+  opacity: 0;
+  min-width: 110px;
+  transition: 0.15s ease all;
+  pointer-events: none;
+}
+
+.apexcharts-menu.apexcharts-menu-open {
+  opacity: 1;
+  pointer-events: all;
+  transition: 0.15s ease all;
+}
+
+.apexcharts-menu-item {
+  padding: 6px 7px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.apexcharts-theme-light .apexcharts-menu-item:hover {
+  background: #eee;
+}
+
+.apexcharts-theme-dark .apexcharts-menu {
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .apexcharts-canvas:hover .apexcharts-toolbar {
+    opacity: 1;
+  }
+}
+
+.apexcharts-datalabel.apexcharts-element-hidden {
+  opacity: 0;
+}
+
+.apexcharts-pie-label,
+.apexcharts-datalabels,
+.apexcharts-datalabel,
+.apexcharts-datalabel-label,
+.apexcharts-datalabel-value {
+  cursor: default;
+  pointer-events: none;
+}
+
+.apexcharts-pie-label-delay {
+  opacity: 0;
+  animation-name: opaque;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+.apexcharts-canvas .apexcharts-element-hidden {
+  opacity: 0;
+}
+
+.apexcharts-hide .apexcharts-series-points {
+  opacity: 0;
+}
+
+.apexcharts-gridline,
+.apexcharts-annotation-rect,
+.apexcharts-tooltip .apexcharts-marker,
+.apexcharts-area-series .apexcharts-area,
+.apexcharts-line,
+.apexcharts-zoom-rect,
+.apexcharts-toolbar svg,
+.apexcharts-area-series .apexcharts-series-markers .apexcharts-marker.no-pointer-events,
+.apexcharts-line-series .apexcharts-series-markers .apexcharts-marker.no-pointer-events,
+.apexcharts-radar-series path,
+.apexcharts-radar-series polygon {
+  pointer-events: none;
+}
+
+
+/* markers */
+
+.apexcharts-marker {
+  transition: 0.15s ease all;
+}
+
+@keyframes opaque {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/* Resize generated styles */
+
+@keyframes resizeanim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.resize-triggers {
+  animation: 1ms resizeanim;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.resize-triggers,
+.resize-triggers>div,
+.contract-trigger:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.resize-triggers>div {
+  background: #eee;
+  overflow: auto;
+}
+
+.contract-trigger:before {
+  width: 200%;
+  height: 200%;
+}</style><style type="text/css">/* Chart.js */
+/*
+ * DOM element rendering detection
+ * https://davidwalsh.name/detect-node-insertion
+ */
+@keyframes chartjs-render-animation {
+	from { opacity: 0.99; }
+	to { opacity: 1; }
+}
+
+.chartjs-render-monitor {
+	animation: chartjs-render-animation 0.001s;
+}
+
+/*
+ * DOM element resizing detection
+ * https://github.com/marcj/css-element-queries
+ */
+.chartjs-size-monitor,
+.chartjs-size-monitor-expand,
+.chartjs-size-monitor-shrink {
+	position: absolute;
+	direction: ltr;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+	pointer-events: none;
+	visibility: hidden;
+	z-index: -1;
+}
+
+.chartjs-size-monitor-expand > div {
+	position: absolute;
+	width: 1000000px;
+	height: 1000000px;
+	left: 0;
+	top: 0;
+}
+
+.chartjs-size-monitor-shrink > div {
+	position: absolute;
+	width: 200%;
+	height: 200%;
+	left: 0;
+	top: 0;
+}
+</style></head>
+<!--
+  HOW TO USE: 
+  data-theme: default (default), dark, light
+  data-layout: fluid (default), boxed
+  data-sidebar-position: left (default), right
+  data-sidebar-behavior: sticky (default), fixed, compact
+-->
+
+<body data-theme="default" data-layout="fluid" data-sidebar-position="left" data-sidebar-behavior="sticky" class="">
+	<div class="wrapper">
+		<nav id="sidebar" class="sidebar">
+			<div class="sidebar-content js-simplebar" data-simplebar="init"><div class="simplebar-wrapper" style="margin: 0px;"><div class="simplebar-height-auto-observer-wrapper"><div class="simplebar-height-auto-observer"></div></div><div class="simplebar-mask"><div class="simplebar-offset" style="right: 0px; bottom: 0px;"><div class="simplebar-content-wrapper" tabindex="0" role="region" aria-label="scrollable content" style="height: 100%; overflow: hidden scroll;"><div class="simplebar-content" style="padding: 0px;">
+				<a class="sidebar-brand" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/index.html">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+            <path d="M19.4,4.1l-9-4C10.1,0,9.9,0,9.6,0.1l-9,4C0.2,4.2,0,4.6,0,5s0.2,0.8,0.6,0.9l9,4C9.7,10,9.9,10,10,10s0.3,0,0.4-0.1l9-4
+              C19.8,5.8,20,5.4,20,5S19.8,4.2,19.4,4.1z"></path>
+            <path d="M10,15c-0.1,0-0.3,0-0.4-0.1l-9-4c-0.5-0.2-0.7-0.8-0.5-1.3c0.2-0.5,0.8-0.7,1.3-0.5l8.6,3.8l8.6-3.8c0.5-0.2,1.1,0,1.3,0.5
+              c0.2,0.5,0,1.1-0.5,1.3l-9,4C10.3,15,10.1,15,10,15z"></path>
+            <path d="M10,20c-0.1,0-0.3,0-0.4-0.1l-9-4c-0.5-0.2-0.7-0.8-0.5-1.3c0.2-0.5,0.8-0.7,1.3-0.5l8.6,3.8l8.6-3.8c0.5-0.2,1.1,0,1.3,0.5
+              c0.2,0.5,0,1.1-0.5,1.3l-9,4C10.3,20,10.1,20,10,20z"></path>
+          </svg>
+    
+          <span class="align-middle me-3">EasyWire</span>
+        </a>
+
+				<ul class="sidebar-nav">
+					<li class="sidebar-header">
+						Pages
+					</li>
+					<li class="sidebar-item active">
+						<a data-bs-target="#dashboards" data-bs-toggle="collapse" class="sidebar-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sliders align-middle"><line x1="4" y1="21" x2="4" y2="14"></line><line x1="4" y1="10" x2="4" y2="3"></line><line x1="12" y1="21" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="3"></line><line x1="20" y1="21" x2="20" y2="16"></line><line x1="20" y1="12" x2="20" y2="3"></line><line x1="1" y1="14" x2="7" y2="14"></line><line x1="9" y1="8" x2="15" y2="8"></line><line x1="17" y1="16" x2="23" y2="16"></line></svg> <span class="align-middle">Dashboards</span>
+              <span class="badge badge-sidebar-primary">5</span>
+            </a>
+						<ul id="dashboards" class="sidebar-dropdown list-unstyled collapse show" data-bs-parent="#sidebar">
+							<li class="sidebar-item active"><a class="sidebar-link" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/dashboard-default.html">Default</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/dashboard-analytics.html">Analytics</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/dashboard-saas.html">SaaS</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/dashboard-social.html">Social</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/dashboard-crypto.html">Crypto</a></li>
+						</ul>
+					</li>
+					<li class="sidebar-item">
+						<a data-bs-target="#pages" data-bs-toggle="collapse" class="sidebar-link collapsed">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layout align-middle"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg> <span class="align-middle">Pages</span>
+            </a>
+						<ul id="pages" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+							<li class="sidebar-item"><a class="sidebar-link" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/pages-profile.html">Profile</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/pages-settings.html">Settings</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/pages-clients.html">Clients</a></li>
+							<li class="sidebar-item">
+								<a data-bs-target="#projects" data-bs-toggle="collapse" class="sidebar-link collapsed">
+                  Projects
+                </a>
+								<ul id="projects" class="sidebar-dropdown list-unstyled collapse ">
+									<li class="sidebar-item">
+										<a class="sidebar-link" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/pages-projects-list.html">List</a>
+									</li>
+									<li class="sidebar-item">
+										<a class="sidebar-link" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/pages-projects-detail.html">Detail <span class="badge badge-sidebar-primary">New</span></a>
+									</li>
+								</ul>
+							</li>
+							<li class="sidebar-item"><a class="sidebar-link" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/pages-invoice.html">Invoice</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/pages-pricing.html">Pricing</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/pages-tasks.html">Tasks</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/pages-chat.html">Chat <span class="badge badge-sidebar-primary">New</span></a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/pages-blank.html">Blank Page</a></li>
+						</ul>
+					</li>
+					<li class="sidebar-item">
+						<a data-bs-target="#auth" data-bs-toggle="collapse" class="sidebar-link collapsed">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users align-middle"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg> <span class="align-middle">Auth</span>
+              <span class="badge badge-sidebar-secondary">Special</span>
+            </a>
+						<ul id="auth" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+							<li class="sidebar-item"><a class="sidebar-link" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/pages-sign-in.html">Sign In</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/pages-sign-up.html">Sign Up</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/pages-reset-password.html">Reset Password</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/pages-404.html">404 Page</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/pages-500.html">500 Page</a></li>
+						</ul>
+					</li>
+					<li class="sidebar-item">
+						<a data-bs-target="#documentation" data-bs-toggle="collapse" class="sidebar-link collapsed">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-book-open align-middle"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg> <span class="align-middle">Documentation</span>
+            </a>
+						<ul id="documentation" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+							<li class="sidebar-item"><a class="sidebar-link" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/docs-introduction.html">Introduction</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/docs-installation.html">Getting Started</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/docs-customization.html">Customization</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/docs-plugins.html">Plugins</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/docs-changelog.html">Changelog</a></li>
+						</ul>
+					</li>
+
+					<li class="sidebar-header">
+						Tools &amp; Components
+					</li>
+					<li class="sidebar-item">
+						<a data-bs-target="#ui" data-bs-toggle="collapse" class="sidebar-link collapsed">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-grid align-middle"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg> <span class="align-middle">UI Elements</span>
+            </a>
+						<ul id="ui" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+							<li class="sidebar-item"><a class="sidebar-link" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/ui-alerts.html">Alerts</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/ui-buttons.html">Buttons</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/ui-cards.html">Cards</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/ui-carousel.html">Carousel</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/ui-embed-video.html">Embed Video</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/ui-general.html">General <span class="badge badge-sidebar-primary">10+</span></a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/ui-grid.html">Grid</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/ui-modals.html">Modals</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/ui-offcanvas.html">Offcanvas</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/ui-placeholders.html">Placeholders</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/ui-tabs.html">Tabs</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/ui-typography.html">Typography</a></li>
+						</ul>
+					</li>
+					<li class="sidebar-item">
+						<a data-bs-target="#icons" data-bs-toggle="collapse" class="sidebar-link collapsed">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart align-middle"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg> <span class="align-middle">Icons</span>
+              <span class="badge badge-sidebar-primary">1500+</span>
+            </a>
+						<ul id="icons" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+							<li class="sidebar-item"><a class="sidebar-link" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/icons-feather.html">Feather</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/icons-font-awesome.html">Font Awesome</a></li>
+						</ul>
+					</li>
+					<li class="sidebar-item">
+						<a data-bs-target="#forms" data-bs-toggle="collapse" class="sidebar-link collapsed">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check-square align-middle"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg> <span class="align-middle">Forms</span>
+            </a>
+						<ul id="forms" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+							<li class="sidebar-item"><a class="sidebar-link" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/forms-layouts.html">Layouts</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/forms-basic-inputs.html">Basic Inputs</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/forms-input-groups.html">Input Groups</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/forms-floating-labels.html">Floating Labels</a></li>
+						</ul>
+					</li>
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/tables-bootstrap.html">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-list align-middle"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg> <span class="align-middle">Tables</span>
+            </a>
+					</li>
+
+					<li class="sidebar-header">
+						Plugins &amp; Addons
+					</li>
+					<li class="sidebar-item">
+						<a data-bs-target="#form-plugins" data-bs-toggle="collapse" class="sidebar-link collapsed">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check-square align-middle"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg> <span class="align-middle">Form Plugins</span>
+            </a>
+						<ul id="form-plugins" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+							<li class="sidebar-item"><a class="sidebar-link" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/forms-advanced-inputs.html">Advanced Inputs</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/forms-editors.html">Editors</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/forms-validation.html">Validation</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/forms-wizard.html">Wizard</a></li>
+						</ul>
+					</li>
+					<li class="sidebar-item">
+						<a data-bs-target="#datatables" data-bs-toggle="collapse" class="sidebar-link collapsed">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-list align-middle"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg> <span class="align-middle">DataTables</span>
+            </a>
+						<ul id="datatables" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+							<li class="sidebar-item"><a class="sidebar-link" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/tables-datatables-responsive.html">Responsive Table</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/tables-datatables-buttons.html">Table with Buttons</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/tables-datatables-column-search.html">Column Search</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/tables-datatables-fixed-header.html">Fixed Header</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/tables-datatables-multi.html">Multi Selection</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/tables-datatables-ajax.html">Ajax Sourced Data</a></li>
+						</ul>
+					</li>
+
+					<li class="sidebar-item">
+						<a data-bs-target="#charts" data-bs-toggle="collapse" class="sidebar-link collapsed">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-pie-chart align-middle"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path><path d="M22 12A10 10 0 0 0 12 2v10z"></path></svg> <span class="align-middle">Charts</span>
+              <span class="badge badge-sidebar-primary">New</span>
+            </a>
+						<ul id="charts" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+							<li class="sidebar-item"><a class="sidebar-link" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/charts-chartjs.html">Chart.js</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/charts-apexcharts.html">ApexCharts <span class="badge badge-sidebar-primary">New</span></a></li>
+						</ul>
+					</li>
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/notifications.html">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell align-middle"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg> <span class="align-middle">Notifications</span>
+            </a>
+					</li>
+					<li class="sidebar-item">
+						<a data-bs-target="#maps" data-bs-toggle="collapse" class="sidebar-link collapsed">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin align-middle"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> <span class="align-middle">Maps</span>
+            </a>
+						<ul id="maps" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+							<li class="sidebar-item"><a class="sidebar-link" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/maps-google.html">Google Maps</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/maps-vector.html">Vector Maps</a></li>
+						</ul>
+					</li>
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/calendar.html">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar align-middle"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg> <span class="align-middle">Calendar</span>
+            </a>
+					</li>
+					<li class="sidebar-item">
+						<a data-bs-target="#multi" data-bs-toggle="collapse" class="sidebar-link collapsed">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-share-2 align-middle"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg> <span class="align-middle">Multi Level</span>
+            </a>
+						<ul id="multi" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+							<li class="sidebar-item">
+								<a data-bs-target="#multi-2" data-bs-toggle="collapse" class="sidebar-link collapsed">
+                  Two Levels
+                </a>
+								<ul id="multi-2" class="sidebar-dropdown list-unstyled collapse">
+									<li class="sidebar-item">
+										<a class="sidebar-link" data-bs-target="#">Item 1</a>
+										<a class="sidebar-link" data-bs-target="#">Item 2</a>
+									</li>
+								</ul>
+							</li>
+							<li class="sidebar-item">
+								<a data-bs-target="#multi-3" data-bs-toggle="collapse" class="sidebar-link collapsed">
+                  Three Levels
+                </a>
+								<ul id="multi-3" class="sidebar-dropdown list-unstyled collapse">
+									<li class="sidebar-item">
+										<a data-bs-target="#multi-3-1" data-bs-toggle="collapse" class="sidebar-link collapsed">
+                      Item 1
+                    </a>
+										<ul id="multi-3-1" class="sidebar-dropdown list-unstyled collapse">
+											<li class="sidebar-item">
+												<a class="sidebar-link" data-bs-target="#">Item 1</a>
+												<a class="sidebar-link" data-bs-target="#">Item 2</a>
+											</li>
+										</ul>
+									</li>
+									<li class="sidebar-item">
+										<a class="sidebar-link" data-bs-target="#">Item 2</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+
+				<div class="sidebar-cta">
+					<div class="sidebar-cta-content">
+						<strong class="d-inline-block mb-2">Monthly Sales Report</strong>
+						<div class="mb-3 text-sm">
+							Your monthly sales report is ready for download!
+						</div>
+
+						<div class="d-grid">
+							<a href="https://themes.getbootstrap.com/product/appstack-responsive-admin-template/" class="btn btn-primary" target="_blank">Download</a>
+						</div>
+					</div>
+				</div>
+			</div></div></div></div><div class="simplebar-placeholder" style="width: auto; height: 1267px;"></div></div><div class="simplebar-track simplebar-horizontal" style="visibility: hidden;"><div class="simplebar-scrollbar" style="width: 0px; display: none;"></div></div><div class="simplebar-track simplebar-vertical" style="visibility: visible;"><div class="simplebar-scrollbar" style="height: 25px; transform: translate3d(0px, 0px, 0px); display: block;"></div></div></div>
+		</nav>
+		<div class="main">
+			<nav class="navbar navbar-expand navbar-light navbar-bg">
+				<a class="sidebar-toggle">
+          <i class="hamburger align-self-center"></i>
+        </a>
+
+				<form class="d-none d-sm-inline-block">
+					<div class="input-group input-group-navbar">
+						<input type="text" class="form-control" placeholder="Search projects…" aria-label="Search">
+						<button class="btn" type="button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search align-middle"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </button>
+					</div>
+				</form>
+
+			<!-- 	<ul class="navbar-nav">
+					<li class="nav-item px-2 dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Mega menu
+            </a>
+						<div class="dropdown-menu dropdown-menu-start dropdown-mega" aria-labelledby="servicesDropdown">
+							<div class="d-md-flex align-items-start justify-content-start">
+								<div class="dropdown-mega-list">
+									<div class="dropdown-header">UI Elements</div>
+									<a class="dropdown-item" href="#">Alerts</a>
+									<a class="dropdown-item" href="#">Buttons</a>
+									<a class="dropdown-item" href="#">Cards</a>
+									<a class="dropdown-item" href="#">Carousel</a>
+									<a class="dropdown-item" href="#">General</a>
+									<a class="dropdown-item" href="#">Grid</a>
+									<a class="dropdown-item" href="#">Modals</a>
+									<a class="dropdown-item" href="#">Tabs</a>
+									<a class="dropdown-item" href="#">Typography</a>
+								</div>
+								<div class="dropdown-mega-list">
+									<div class="dropdown-header">Forms</div>
+									<a class="dropdown-item" href="#">Layouts</a>
+									<a class="dropdown-item" href="#">Basic Inputs</a>
+									<a class="dropdown-item" href="#">Input Groups</a>
+									<a class="dropdown-item" href="#">Advanced Inputs</a>
+									<a class="dropdown-item" href="#">Editors</a>
+									<a class="dropdown-item" href="#">Validation</a>
+									<a class="dropdown-item" href="#">Wizard</a>
+								</div>
+								<div class="dropdown-mega-list">
+									<div class="dropdown-header">Tables</div>
+									<a class="dropdown-item" href="#">Basic Tables</a>
+									<a class="dropdown-item" href="#">Responsive Table</a>
+									<a class="dropdown-item" href="#">Table with Buttons</a>
+									<a class="dropdown-item" href="#">Column Search</a>
+									<a class="dropdown-item" href="#">Muulti Selection</a>
+									<a class="dropdown-item" href="#">Ajax Sourced Data</a>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul> -->
+
+				<div class="navbar-collapse collapse">
+					<ul class="navbar-nav navbar-align">
+					
+						<li class="nav-item dropdown">
+							<a class="nav-icon dropdown-toggle" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/index.html#" id="alertsDropdown" data-bs-toggle="dropdown">
+								<div class="position-relative">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell-off align-middle"><path d="M13.73 21a2 2 0 0 1-3.46 0"></path><path d="M18.63 13A17.89 17.89 0 0 1 18 8"></path><path d="M6.26 6.26A5.86 5.86 0 0 0 6 8c0 7-3 9-3 9h14"></path><path d="M18 8a6 6 0 0 0-9.33-5"></path><line x1="1" y1="1" x2="23" y2="23"></line></svg>
+								</div>
+							</a>
+							<div class="dropdown-menu dropdown-menu-lg dropdown-menu-end py-0" aria-labelledby="alertsDropdown">
+								<div class="dropdown-menu-header">
+									4 New Notifications
+								</div>
+								<div class="list-group">
+									<a href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/index.html#" class="list-group-item">
+										<div class="row g-0 align-items-center">
+											<div class="col-2">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-circle text-danger"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+											</div>
+											<div class="col-10">
+												<div class="text-dark">Update completed</div>
+												<div class="text-muted small mt-1">Restart server 12 to complete the update.</div>
+												<div class="text-muted small mt-1">2h ago</div>
+											</div>
+										</div>
+									</a>
+									<a href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/index.html#" class="list-group-item">
+										<div class="row g-0 align-items-center">
+											<div class="col-2">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell text-warning"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+											</div>
+											<div class="col-10">
+												<div class="text-dark">Lorem ipsum</div>
+												<div class="text-muted small mt-1">Aliquam ex eros, imperdiet vulputate hendrerit et.</div>
+												<div class="text-muted small mt-1">6h ago</div>
+											</div>
+										</div>
+									</a>
+									<a href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/index.html#" class="list-group-item">
+										<div class="row g-0 align-items-center">
+											<div class="col-2">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home text-primary"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+											</div>
+											<div class="col-10">
+												<div class="text-dark">Login from 192.186.1.1</div>
+												<div class="text-muted small mt-1">8h ago</div>
+											</div>
+										</div>
+									</a>
+									<a href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/index.html#" class="list-group-item">
+										<div class="row g-0 align-items-center">
+											<div class="col-2">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user-plus text-success"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="20" y1="8" x2="20" y2="14"></line><line x1="23" y1="11" x2="17" y2="11"></line></svg>
+											</div>
+											<div class="col-10">
+												<div class="text-dark">New connection</div>
+												<div class="text-muted small mt-1">Anna accepted your request.</div>
+												<div class="text-muted small mt-1">12h ago</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="dropdown-menu-footer">
+									<a href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/index.html#" class="text-muted">Show all notifications</a>
+								</div>
+							</div>
+						</li>
+					
+						<li class="nav-item dropdown">
+							<a class="nav-icon dropdown-toggle d-inline-block d-sm-none" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/index.html#" data-bs-toggle="dropdown">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-settings align-middle"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+              </a>
+
+							<a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/index.html#" data-bs-toggle="dropdown">
+                <img src="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/img/avatars/avatar.jpg" class="avatar img-fluid rounded-circle me-1" alt="Vinod Kumar"> <span class="text-dark">Vinod Kumar</span>
+              </a>
+							<div class="dropdown-menu dropdown-menu-end">
+								<a class="dropdown-item" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/index.html#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user align-middle me-1"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg> Profile</a>
+								<a class="dropdown-item" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/index.html#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-pie-chart align-middle me-1"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path><path d="M22 12A10 10 0 0 0 12 2v10z"></path></svg> Analytics</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/index.html#">Settings &amp; Privacy</a>
+								<a class="dropdown-item" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/index.html#">Help</a>
+								<a class="dropdown-item" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/index.html#">Sign out</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
+			<main class="content">
+				<div class="container-fluid p-0">
+
+					<div class="row mb-2 mb-xl-3">
+						<div class="col-auto d-none d-sm-block">
+							<h3>Dashboard</h3>
+						</div>
+
+						<div class="col-auto ms-auto text-end mt-n1">
+
+							<div class="dropdown me-2 d-inline-block">
+								<a class="btn btn-light bg-white shadow-sm dropdown-toggle" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/index.html#" data-bs-toggle="dropdown" data-bs-display="static">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar align-middle mt-n1"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg> Today
+      </a>
+
+								<div class="dropdown-menu dropdown-menu-end">
+									<h6 class="dropdown-header">Settings</h6>
+									<a class="dropdown-item" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/index.html#">Action</a>
+									<a class="dropdown-item" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/index.html#">Another action</a>
+									<a class="dropdown-item" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/index.html#">Something else here</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/index.html#">Separated link</a>
+								</div>
+							</div>
+
+							<button class="btn btn-primary shadow-sm">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-filter align-middle"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon></svg>
+    </button>
+							<button class="btn btn-primary shadow-sm">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-refresh-cw align-middle"><polyline points="23 4 23 10 17 10"></polyline><polyline points="1 20 1 14 7 14"></polyline><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path></svg>
+    </button>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 col-sm-6 col-xxl-3 d-flex">
+							<div class="card illustration flex-fill">
+								<div class="card-body p-0 d-flex flex-fill">
+									<div class="row g-0 w-100">
+										<div class="col-6">
+											<div class="illustration-text p-3 m-1">
+												<h4 class="illustration-text">Welcome Back, Chris!</h4>
+												<p class="mb-0">AppStack Dashboard</p>
+											</div>
+										</div>
+										<div class="col-6 align-self-end text-end">
+											<img src="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/img/illustrations/customer-support.png" alt="Customer Support" class="img-fluid illustration-img">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-xxl-3 d-flex">
+							<div class="card flex-fill">
+								<div class="card-body py-4">
+									<div class="d-flex align-items-start">
+										<div class="flex-grow-1">
+											<h3 class="mb-2">$ 24.300</h3>
+											<p class="mb-2">Total Earnings</p>
+											<div class="mb-0">
+												<span class="badge badge-soft-success me-2"> +5.35% </span>
+												<span class="text-muted">Since last week</span>
+											</div>
+										</div>
+										<div class="d-inline-block ms-3">
+											<div class="stat">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-dollar-sign align-middle text-success"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-xxl-3 d-flex">
+							<div class="card flex-fill">
+								<div class="card-body py-4">
+									<div class="d-flex align-items-start">
+										<div class="flex-grow-1">
+											<h3 class="mb-2">43</h3>
+											<p class="mb-2">Pending Orders</p>
+											<div class="mb-0">
+												<span class="badge badge-soft-danger me-2"> -4.25% </span>
+												<span class="text-muted">Since last week</span>
+											</div>
+										</div>
+										<div class="d-inline-block ms-3">
+											<div class="stat">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag align-middle text-danger"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-xxl-3 d-flex">
+							<div class="card flex-fill">
+								<div class="card-body py-4">
+									<div class="d-flex align-items-start">
+										<div class="flex-grow-1">
+											<h3 class="mb-2">$ 18.700</h3>
+											<p class="mb-2">Total Revenue</p>
+											<div class="mb-0">
+												<span class="badge badge-soft-success me-2"> +8.65% </span>
+												<span class="text-muted">Since last week</span>
+											</div>
+										</div>
+										<div class="d-inline-block ms-3">
+											<div class="stat">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-dollar-sign align-middle text-info"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-12 col-lg-8 d-flex">
+							<div class="card flex-fill w-100">
+								<div class="card-header">
+									<div class="card-actions float-end">
+										<div class="dropdown position-relative">
+											<a href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/index.html#" data-bs-toggle="dropdown" data-bs-display="static">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal align-middle"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+            </a>
+
+											<div class="dropdown-menu dropdown-menu-end">
+												<a class="dropdown-item" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/index.html#">Action</a>
+												<a class="dropdown-item" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/index.html#">Another action</a>
+												<a class="dropdown-item" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/index.html#">Something else here</a>
+											</div>
+										</div>
+									</div>
+									<h5 class="card-title mb-0">Sales / Revenue</h5>
+								</div>
+								<div class="card-body d-flex w-100">
+									<div class="align-self-center chart chart-lg"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+										<canvas id="chartjs-dashboard-bar" style="display: block; height: 350px; width: 567px;" width="850" height="525" class="chartjs-render-monitor"></canvas>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-lg-4 d-flex">
+							<div class="card flex-fill w-100">
+								<div class="card-header">
+									<span class="badge bg-info float-end">Today</span>
+									<h5 class="card-title mb-0">Daily feed</h5>
+								</div>
+								<div class="card-body">
+									<div class="d-flex align-items-start">
+										<img src="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/img/avatars/avatar-5.jpg" width="36" height="36" class="rounded-circle me-2" alt="Ashley Briggs">
+										<div class="flex-grow-1">
+											<small class="float-end">5m ago</small>
+											<strong>Ashley Briggs</strong> started following <strong>Stacie Hall</strong><br>
+											<small class="text-muted">Today 7:51 pm</small><br>
+
+										</div>
+									</div>
+
+									<hr>
+									<div class="d-flex align-items-start">
+										<img src="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/img/avatars/avatar.jpg" width="36" height="36" class="rounded-circle me-2" alt="Chris Wood">
+										<div class="flex-grow-1">
+											<small class="float-end">30m ago</small>
+											<strong>Chris Wood</strong> posted something on <strong>Stacie Hall</strong>'s timeline<br>
+											<small class="text-muted">Today 7:21 pm</small>
+
+											<div class="border text-sm text-muted p-2 mt-1">
+												Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing...
+											</div>
+										</div>
+									</div>
+
+									<hr>
+									<div class="d-flex align-items-start">
+										<img src="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/img/avatars/avatar-4.jpg" width="36" height="36" class="rounded-circle me-2" alt="Stacie Hall">
+										<div class="flex-grow-1">
+											<small class="float-end">1h ago</small>
+											<strong>Stacie Hall</strong> posted a new blog<br>
+
+											<small class="text-muted">Today 6:35 pm</small>
+										</div>
+									</div>
+
+									<hr>
+									<div class="d-grid">
+										<a href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/index.html#" class="btn btn-primary">Load more</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-12 col-lg-6 col-xl-4 d-flex">
+							<div class="card flex-fill">
+								<div class="card-header">
+									<div class="card-actions float-end">
+										<div class="dropdown position-relative">
+											<a href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/index.html#" data-bs-toggle="dropdown" data-bs-display="static">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal align-middle"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+            </a>
+
+											<div class="dropdown-menu dropdown-menu-end">
+												<a class="dropdown-item" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/index.html#">Action</a>
+												<a class="dropdown-item" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/index.html#">Another action</a>
+												<a class="dropdown-item" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/index.html#">Something else here</a>
+											</div>
+										</div>
+									</div>
+									<h5 class="card-title mb-0">Calendar</h5>
+								</div>
+								<div class="card-body d-flex">
+									<div class="align-self-center w-100">
+										<div class="chart">
+											<div id="datetimepicker-dashboard"><div class="bootstrap-datetimepicker-widget usetwentyfour"><ul class="list-unstyled"><li class="show"><div class="datepicker"><div class="datepicker-days" style=""><table class="table table-sm"><thead><tr><th class="prev" data-action="previous"><span class="fas fa-chevron-left" title="Previous Month"></span></th><th class="picker-switch" data-action="pickerSwitch" colspan="5" title="Select Month">October 2021</th><th class="next" data-action="next"><span class="fas fa-chevron-right" title="Next Month"></span></th></tr><tr><th class="dow">Su</th><th class="dow">Mo</th><th class="dow">Tu</th><th class="dow">We</th><th class="dow">Th</th><th class="dow">Fr</th><th class="dow">Sa</th></tr></thead><tbody><tr><td data-action="selectDay" data-day="09/26/2021" class="day old weekend">26</td><td data-action="selectDay" data-day="09/27/2021" class="day old">27</td><td data-action="selectDay" data-day="09/28/2021" class="day old">28</td><td data-action="selectDay" data-day="09/29/2021" class="day old">29</td><td data-action="selectDay" data-day="09/30/2021" class="day old">30</td><td data-action="selectDay" data-day="10/01/2021" class="day">1</td><td data-action="selectDay" data-day="10/02/2021" class="day active today weekend">2</td></tr><tr><td data-action="selectDay" data-day="10/03/2021" class="day weekend">3</td><td data-action="selectDay" data-day="10/04/2021" class="day">4</td><td data-action="selectDay" data-day="10/05/2021" class="day">5</td><td data-action="selectDay" data-day="10/06/2021" class="day">6</td><td data-action="selectDay" data-day="10/07/2021" class="day">7</td><td data-action="selectDay" data-day="10/08/2021" class="day">8</td><td data-action="selectDay" data-day="10/09/2021" class="day weekend">9</td></tr><tr><td data-action="selectDay" data-day="10/10/2021" class="day weekend">10</td><td data-action="selectDay" data-day="10/11/2021" class="day">11</td><td data-action="selectDay" data-day="10/12/2021" class="day">12</td><td data-action="selectDay" data-day="10/13/2021" class="day">13</td><td data-action="selectDay" data-day="10/14/2021" class="day">14</td><td data-action="selectDay" data-day="10/15/2021" class="day">15</td><td data-action="selectDay" data-day="10/16/2021" class="day weekend">16</td></tr><tr><td data-action="selectDay" data-day="10/17/2021" class="day weekend">17</td><td data-action="selectDay" data-day="10/18/2021" class="day">18</td><td data-action="selectDay" data-day="10/19/2021" class="day">19</td><td data-action="selectDay" data-day="10/20/2021" class="day">20</td><td data-action="selectDay" data-day="10/21/2021" class="day">21</td><td data-action="selectDay" data-day="10/22/2021" class="day">22</td><td data-action="selectDay" data-day="10/23/2021" class="day weekend">23</td></tr><tr><td data-action="selectDay" data-day="10/24/2021" class="day weekend">24</td><td data-action="selectDay" data-day="10/25/2021" class="day">25</td><td data-action="selectDay" data-day="10/26/2021" class="day">26</td><td data-action="selectDay" data-day="10/27/2021" class="day">27</td><td data-action="selectDay" data-day="10/28/2021" class="day">28</td><td data-action="selectDay" data-day="10/29/2021" class="day">29</td><td data-action="selectDay" data-day="10/30/2021" class="day weekend">30</td></tr><tr><td data-action="selectDay" data-day="10/31/2021" class="day weekend">31</td><td data-action="selectDay" data-day="11/01/2021" class="day new">1</td><td data-action="selectDay" data-day="11/02/2021" class="day new">2</td><td data-action="selectDay" data-day="11/03/2021" class="day new">3</td><td data-action="selectDay" data-day="11/04/2021" class="day new">4</td><td data-action="selectDay" data-day="11/05/2021" class="day new">5</td><td data-action="selectDay" data-day="11/06/2021" class="day new weekend">6</td></tr></tbody></table></div><div class="datepicker-months" style="display: none;"><table class="table-condensed"><thead><tr><th class="prev" data-action="previous"><span class="fas fa-chevron-left" title="Previous Year"></span></th><th class="picker-switch" data-action="pickerSwitch" colspan="5" title="Select Year">2021</th><th class="next" data-action="next"><span class="fas fa-chevron-right" title="Next Year"></span></th></tr></thead><tbody><tr><td colspan="7"><span data-action="selectMonth" class="month">Jan</span><span data-action="selectMonth" class="month">Feb</span><span data-action="selectMonth" class="month">Mar</span><span data-action="selectMonth" class="month">Apr</span><span data-action="selectMonth" class="month">May</span><span data-action="selectMonth" class="month">Jun</span><span data-action="selectMonth" class="month">Jul</span><span data-action="selectMonth" class="month">Aug</span><span data-action="selectMonth" class="month">Sep</span><span data-action="selectMonth" class="month active">Oct</span><span data-action="selectMonth" class="month">Nov</span><span data-action="selectMonth" class="month">Dec</span></td></tr></tbody></table></div><div class="datepicker-years" style="display: none;"><table class="table-condensed"><thead><tr><th class="prev" data-action="previous"><span class="fas fa-chevron-left" title="Previous Decade"></span></th><th class="picker-switch" data-action="pickerSwitch" colspan="5" title="Select Decade">2020-2029</th><th class="next" data-action="next"><span class="fas fa-chevron-right" title="Next Decade"></span></th></tr></thead><tbody><tr><td colspan="7"><span data-action="selectYear" class="year old">2019</span><span data-action="selectYear" class="year">2020</span><span data-action="selectYear" class="year active">2021</span><span data-action="selectYear" class="year">2022</span><span data-action="selectYear" class="year">2023</span><span data-action="selectYear" class="year">2024</span><span data-action="selectYear" class="year">2025</span><span data-action="selectYear" class="year">2026</span><span data-action="selectYear" class="year">2027</span><span data-action="selectYear" class="year">2028</span><span data-action="selectYear" class="year">2029</span><span data-action="selectYear" class="year old">2030</span></td></tr></tbody></table></div><div class="datepicker-decades" style="display: none;"><table class="table-condensed"><thead><tr><th class="prev" data-action="previous"><span class="fas fa-chevron-left" title="Previous Century"></span></th><th class="picker-switch" data-action="pickerSwitch" colspan="5">2000-2090</th><th class="next" data-action="next"><span class="fas fa-chevron-right" title="Next Century"></span></th></tr></thead><tbody><tr><td colspan="7"><span data-action="selectDecade" class="decade old" data-selection="2006">1990</span><span data-action="selectDecade" class="decade" data-selection="2006">2000</span><span data-action="selectDecade" class="decade active" data-selection="2016">2010</span><span data-action="selectDecade" class="decade active" data-selection="2026">2020</span><span data-action="selectDecade" class="decade" data-selection="2036">2030</span><span data-action="selectDecade" class="decade" data-selection="2046">2040</span><span data-action="selectDecade" class="decade" data-selection="2056">2050</span><span data-action="selectDecade" class="decade" data-selection="2066">2060</span><span data-action="selectDecade" class="decade" data-selection="2076">2070</span><span data-action="selectDecade" class="decade" data-selection="2086">2080</span><span data-action="selectDecade" class="decade" data-selection="2096">2090</span><span data-action="selectDecade" class="decade old" data-selection="2106">2100</span></td></tr></tbody></table></div></div></li><li class="picker-switch accordion-toggle"></li></ul></div></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-xl-4 d-none d-xl-flex">
+							<div class="card flex-fill w-100">
+								<div class="card-header">
+									<div class="card-actions float-end">
+										<div class="dropdown position-relative">
+											<a href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/index.html#" data-bs-toggle="dropdown" data-bs-display="static">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal align-middle"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+            </a>
+
+											<div class="dropdown-menu dropdown-menu-end">
+												<a class="dropdown-item" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/index.html#">Action</a>
+												<a class="dropdown-item" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/index.html#">Another action</a>
+												<a class="dropdown-item" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/index.html#">Something else here</a>
+											</div>
+										</div>
+									</div>
+									<h5 class="card-title mb-0">Weekly sales</h5>
+								</div>
+								<div class="card-body d-flex">
+									<div class="align-self-center w-100">
+										<div class="py-3">
+											<div class="chart chart-xs"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+												<canvas id="chartjs-dashboard-pie" width="378" height="225" style="display: block; height: 150px; width: 252px;" class="chartjs-render-monitor"></canvas>
+											</div>
+										</div>
+
+										<table class="table mb-0">
+											<thead>
+												<tr>
+													<th>Source</th>
+													<th class="text-end">Revenue</th>
+													<th class="text-end">Value</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><i class="fas fa-square-full text-primary"></i> Direct</td>
+													<td class="text-end">$ 2602</td>
+													<td class="text-end text-success">+43%</td>
+												</tr>
+												<tr>
+													<td><i class="fas fa-square-full text-warning"></i> Affiliate</td>
+													<td class="text-end">$ 1253</td>
+													<td class="text-end text-success">+13%</td>
+												</tr>
+												<tr>
+													<td><i class="fas fa-square-full text-danger"></i> E-mail</td>
+													<td class="text-end">$ 541</td>
+													<td class="text-end text-success">+24%</td>
+												</tr>
+												<tr>
+													<td><i class="fas fa-square-full text-dark"></i> Other</td>
+													<td class="text-end">$ 1465</td>
+													<td class="text-end text-success">+11%</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-lg-6 col-xl-4 d-flex">
+							<div class="card flex-fill w-100">
+								<div class="card-header">
+									<div class="card-actions float-end">
+										<div class="dropdown position-relative">
+											<a href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/index.html#" data-bs-toggle="dropdown" data-bs-display="static">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal align-middle"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+            </a>
+
+											<div class="dropdown-menu dropdown-menu-end">
+												<a class="dropdown-item" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/index.html#">Action</a>
+												<a class="dropdown-item" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/index.html#">Another action</a>
+												<a class="dropdown-item" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/index.html#">Something else here</a>
+											</div>
+										</div>
+									</div>
+									<h5 class="card-title mb-0">Appointments</h5>
+								</div>
+								<div class="card-body">
+									<ul class="timeline">
+										<li class="timeline-item">
+											<strong>Chat with Carl and Ashley</strong>
+											<span class="float-end text-muted text-sm">30m ago</span>
+											<p>Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris...</p>
+										</li>
+										<li class="timeline-item">
+											<strong>The big launch</strong>
+											<span class="float-end text-muted text-sm">2h ago</span>
+											<p>Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum
+												nunc...</p>
+										</li>
+										<li class="timeline-item">
+											<strong>Coffee break</strong>
+											<span class="float-end text-muted text-sm">3h ago</span>
+											<p>Curabitur ligula sapien, tincidunt non, euismod vitae, posuere imperdiet, leo. Maecenas malesuada...</p>
+										</li>
+										<li class="timeline-item">
+											<strong>Chat with team</strong>
+											<span class="float-end text-muted text-sm">30m ago</span>
+											<p>Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum...</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="card flex-fill">
+						<div class="card-header">
+							<div class="card-actions float-end">
+								<div class="dropdown position-relative">
+									<a href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/index.html#" data-bs-toggle="dropdown" data-bs-display="static">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal align-middle"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+        </a>
+
+									<div class="dropdown-menu dropdown-menu-end">
+										<a class="dropdown-item" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/index.html#">Action</a>
+										<a class="dropdown-item" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/index.html#">Another action</a>
+										<a class="dropdown-item" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/index.html#">Something else here</a>
+									</div>
+								</div>
+							</div>
+							<h5 class="card-title mb-0">Latest Projects</h5>
+						</div>
+						<div id="datatables-dashboard-projects_wrapper" class="dataTables_wrapper dt-bootstrap5 no-footer"><div class="row"><div class="col-sm-12 col-md-6"></div><div class="col-sm-12 col-md-6"></div></div><div class="row"><div class="col-sm-12"><table id="datatables-dashboard-projects" class="table table-striped my-0 dataTable no-footer" aria-describedby="datatables-dashboard-projects_info">
+							<thead>
+								<tr><th class="sorting sorting_asc" tabindex="0" aria-controls="datatables-dashboard-projects" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">Name</th><th class="d-none d-xl-table-cell sorting" tabindex="0" aria-controls="datatables-dashboard-projects" rowspan="1" colspan="1" aria-label="Start Date: activate to sort column ascending">Start Date</th><th class="d-none d-xl-table-cell sorting" tabindex="0" aria-controls="datatables-dashboard-projects" rowspan="1" colspan="1" aria-label="End Date: activate to sort column ascending">End Date</th><th class="sorting" tabindex="0" aria-controls="datatables-dashboard-projects" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending">Status</th><th class="d-none d-md-table-cell sorting" tabindex="0" aria-controls="datatables-dashboard-projects" rowspan="1" colspan="1" aria-label="Assignee: activate to sort column ascending">Assignee</th></tr>
+							</thead>
+							<tbody>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+							<tr class="odd">
+									<td class="sorting_1">Project Apollo</td>
+									<td class="d-none d-xl-table-cell">01/01/2021</td>
+									<td class="d-none d-xl-table-cell">31/06/2021</td>
+									<td><span class="badge bg-success">Done</span></td>
+									<td class="d-none d-md-table-cell">Carl Jenkins</td>
+								</tr><tr class="even">
+									<td class="sorting_1">Project Fireball</td>
+									<td class="d-none d-xl-table-cell">01/01/2021</td>
+									<td class="d-none d-xl-table-cell">31/06/2021</td>
+									<td><span class="badge bg-danger">Cancelled</span></td>
+									<td class="d-none d-md-table-cell">Bertha Martin</td>
+								</tr><tr class="odd">
+									<td class="sorting_1">Project Hades</td>
+									<td class="d-none d-xl-table-cell">01/01/2021</td>
+									<td class="d-none d-xl-table-cell">31/06/2021</td>
+									<td><span class="badge bg-success">Done</span></td>
+									<td class="d-none d-md-table-cell">Stacie Hall</td>
+								</tr><tr class="even">
+									<td class="sorting_1">Project Nitro</td>
+									<td class="d-none d-xl-table-cell">01/01/2021</td>
+									<td class="d-none d-xl-table-cell">31/06/2021</td>
+									<td><span class="badge bg-warning">In progress</span></td>
+									<td class="d-none d-md-table-cell">Carl Jenkins</td>
+								</tr><tr class="odd">
+									<td class="sorting_1">Project Phoenix</td>
+									<td class="d-none d-xl-table-cell">01/01/2021</td>
+									<td class="d-none d-xl-table-cell">31/06/2021</td>
+									<td><span class="badge bg-success">Done</span></td>
+									<td class="d-none d-md-table-cell">Bertha Martin</td>
+								</tr><tr class="even">
+									<td class="sorting_1">Project Romeo</td>
+									<td class="d-none d-xl-table-cell">01/01/2021</td>
+									<td class="d-none d-xl-table-cell">31/06/2021</td>
+									<td><span class="badge bg-success">Done</span></td>
+									<td class="d-none d-md-table-cell">Ashley Briggs</td>
+								</tr></tbody>
+						</table></div></div><div class="row"><div class="col-sm-12 col-md-5"><div class="dataTables_info" id="datatables-dashboard-projects_info" role="status" aria-live="polite">Showing 1 to 6 of 9 entries</div></div><div class="col-sm-12 col-md-7"><div class="dataTables_paginate paging_simple_numbers" id="datatables-dashboard-projects_paginate"><ul class="pagination"><li class="paginate_button page-item previous disabled" id="datatables-dashboard-projects_previous"><a href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/index.html#" aria-controls="datatables-dashboard-projects" data-dt-idx="0" tabindex="0" class="page-link">Previous</a></li><li class="paginate_button page-item active"><a href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/index.html#" aria-controls="datatables-dashboard-projects" data-dt-idx="1" tabindex="0" class="page-link">1</a></li><li class="paginate_button page-item "><a href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/index.html#" aria-controls="datatables-dashboard-projects" data-dt-idx="2" tabindex="0" class="page-link">2</a></li><li class="paginate_button page-item next" id="datatables-dashboard-projects_next"><a href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/index.html#" aria-controls="datatables-dashboard-projects" data-dt-idx="3" tabindex="0" class="page-link">Next</a></li></ul></div></div></div></div>
+					</div>
+				</div>
+			</main>
+
+			<footer class="footer">
+				<div class="container-fluid">
+					<div class="row text-muted">
+						<div class="col-6 text-start">
+							<ul class="list-inline">
+								<li class="list-inline-item">
+									<a class="text-muted" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/index.html#">Support</a>
+								</li>
+								<li class="list-inline-item">
+									<a class="text-muted" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/index.html#">Help Center</a>
+								</li>
+								<li class="list-inline-item">
+									<a class="text-muted" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/index.html#">Privacy</a>
+								</li>
+								<li class="list-inline-item">
+									<a class="text-muted" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/index.html#">Terms of Service</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-6 text-end">
+							<p class="mb-0">
+								© 2021 - <a href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/index.html" class="text-muted">AppStack</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+
+	<script src="./Dashboard_files/app.js.download"></script><div class="notyf"></div><div class="notyf-announcer" aria-atomic="true" aria-live="polite" style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; outline: 0px;"></div>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			// Bar chart
+			new Chart(document.getElementById("chartjs-dashboard-bar"), {
+				type: "bar",
+				data: {
+					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+					datasets: [{
+						label: "Last year",
+						backgroundColor: window.theme.primary,
+						borderColor: window.theme.primary,
+						hoverBackgroundColor: window.theme.primary,
+						hoverBorderColor: window.theme.primary,
+						data: [54, 67, 41, 55, 62, 45, 55, 73, 60, 76, 48, 79],
+						barPercentage: .325,
+						categoryPercentage: .5
+					}, {
+						label: "This year",
+						backgroundColor: window.theme["primary-light"],
+						borderColor: window.theme["primary-light"],
+						hoverBackgroundColor: window.theme["primary-light"],
+						hoverBorderColor: window.theme["primary-light"],
+						data: [69, 66, 24, 48, 52, 51, 44, 53, 62, 79, 51, 68],
+						barPercentage: .325,
+						categoryPercentage: .5
+					}]
+				},
+				options: {
+					maintainAspectRatio: false,
+					cornerRadius: 15,
+					legend: {
+						display: false
+					},
+					scales: {
+						yAxes: [{
+							gridLines: {
+								display: false
+							},
+							ticks: {
+								stepSize: 20
+							},
+							stacked: true,
+						}],
+						xAxes: [{
+							gridLines: {
+								color: "transparent"
+							},
+							stacked: true,
+						}]
+					}
+				}
+			});
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			$("#datetimepicker-dashboard").datetimepicker({
+				inline: true,
+				sideBySide: false,
+				format: "L"
+			});
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			// Pie chart
+			new Chart(document.getElementById("chartjs-dashboard-pie"), {
+				type: "pie",
+				data: {
+					labels: ["Direct", "Affiliate", "E-mail", "Other"],
+					datasets: [{
+						data: [2602, 1253, 541, 1465],
+						backgroundColor: [
+							window.theme.primary,
+							window.theme.warning,
+							window.theme.danger,
+							"#E8EAED"
+						],
+						borderWidth: 5,
+						borderColor: window.theme.white
+					}]
+				},
+				options: {
+					responsive: !window.MSInputMethodContext,
+					maintainAspectRatio: false,
+					cutoutPercentage: 70,
+					legend: {
+						display: false
+					}
+				}
+			});
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			$("#datatables-dashboard-projects").DataTable({
+				pageLength: 6,
+				lengthChange: false,
+				bFilter: false,
+				autoWidth: false
+			});
+		});
+	</script>
+
+
+
+<div class="settings js-settings">
+  <div class="settings-toggle">
+    <div class="settings-toggle-option settings-toggle-option-text js-settings-toggle" title="Theme Builder">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sliders align-middle"><line x1="4" y1="21" x2="4" y2="14"></line><line x1="4" y1="10" x2="4" y2="3"></line><line x1="12" y1="21" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="3"></line><line x1="20" y1="21" x2="20" y2="16"></line><line x1="20" y1="12" x2="20" y2="3"></line><line x1="1" y1="14" x2="7" y2="14"></line><line x1="9" y1="8" x2="15" y2="8"></line><line x1="17" y1="16" x2="23" y2="16"></line></svg>
+      Builder
+    </div>
+    <a class="settings-toggle-option" title="Documentation" href="file:///C:/Users/Ashok%20Kumar/Desktop/ui-test/docs-introduction.html" target="_blank">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-book-open align-middle"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+    </a>
+  </div>
+
+  <div class="settings-panel">
+    <div class="settings-content">
+      <div class="settings-title d-flex align-items-center">
+        <button type="button" class="btn-close float-right js-settings-toggle" aria-label="Close"></button>
+
+        <h4 class="mb-0 ms-2 d-inline-block">Theme Builder</h4>
+      </div>
+
+      <div class="settings-body">
+
+      <div class="alert alert-primary" role="alert">
+        <div class="alert-message">
+          <strong>Hey there!</strong> Set your own customized style below. Choose the ones that best fits your needs.
+        </div>
+      </div>
+
+        <div class="mb-3">
+          <span class="d-block font-size-lg font-weight-bold">Color scheme</span>
+          <span class="d-block text-muted mb-2">The perfect color mode for your app.</span>
+
+          <div class="row g-0 text-center mx-n1 mb-2">
+            <div class="col">
+              <label class="mx-1 d-block mb-1">
+                <input class="settings-scheme-label" type="radio" name="theme" value="default">
+                <div class="settings-scheme">
+                  <div class="settings-scheme-theme settings-scheme-theme-default"></div>
+                </div>
+              </label>
+              Default
+            </div>
+            <div class="col">
+              <label class="mx-1 d-block mb-1">
+                <input class="settings-scheme-label" type="radio" name="theme" value="colored">
+                <div class="settings-scheme">
+                  <div class="settings-scheme-theme settings-scheme-theme-colored"></div>
+                </div>
+              </label>
+              Colored
+            </div>
+          </div>
+          <div class="row g-0 text-center mx-n1">
+            <div class="col">
+              <label class="mx-1 d-block mb-1">
+                <input class="settings-scheme-label" type="radio" name="theme" value="dark">
+                <div class="settings-scheme">
+                  <div class="settings-scheme-theme settings-scheme-theme-dark"></div>
+                </div>
+              </label>
+              Dark
+            </div>
+            <div class="col">
+              <label class="mx-1 d-block mb-1">
+                <input class="settings-scheme-label" type="radio" name="theme" value="light">
+                <div class="settings-scheme">
+                  <div class="settings-scheme-theme settings-scheme-theme-light"></div>
+                </div>
+              </label>
+              Light
+            </div>
+          </div>
+        </div>
+        
+        <hr>
+
+        <div class="mb-3">
+          <span class="d-block font-size-lg font-weight-bold">Sidebar position</span>
+          <span class="d-block text-muted mb-2">Toggle the position of the sidebar.</span>
+
+          <div>
+            <label>
+              <input class="settings-button-label" type="radio" name="sidebarPosition" value="left">
+              <div class="settings-button">
+                Left
+              </div>
+            </label>
+            <label>
+              <input class="settings-button-label" type="radio" name="sidebarPosition" value="right">
+              <div class="settings-button">
+                Right
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="mb-3">
+          <span class="d-block font-size-lg font-weight-bold">Sidebar behavior</span>
+          <span class="d-block text-muted mb-2">Change the behavior of the sidebar.</span>
+
+          <div>
+            <label>
+              <input class="settings-button-label" type="radio" name="sidebarBehavior" value="sticky">
+              <div class="settings-button">
+                Sticky
+              </div>
+            </label>
+            <label>
+              <input class="settings-button-label" type="radio" name="sidebarBehavior" value="fixed">
+              <div class="settings-button">
+                Fixed
+              </div>
+            </label>
+            <label>
+              <input class="settings-button-label" type="radio" name="sidebarBehavior" value="compact">
+              <div class="settings-button">
+                Compact
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="mb-3">
+          <span class="d-block font-size-lg font-weight-bold">Layout</span>
+          <span class="d-block text-muted mb-2">Toggle container layout system.</span>
+
+          <div>
+            <label>
+              <input class="settings-button-label" type="radio" name="layout" value="fluid">
+              <div class="settings-button">
+                Fluid
+              </div>
+            </label>
+            <label>
+              <input class="settings-button-label" type="radio" name="layout" value="boxed">
+              <div class="settings-button">
+                Boxed
+              </div>
+            </label>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="settings-footer">
+        <div class="d-grid">
+          <a class="btn btn-primary btn-lg btn-block" href="https://themes.getbootstrap.com/product/appstack-responsive-admin-template/" target="_blank">Purchase</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div><svg id="SvgjsSvg1001" width="2" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev" style="overflow: hidden; top: -100%; left: -100%; position: absolute; opacity: 0;"><defs id="SvgjsDefs1002"></defs><polyline id="SvgjsPolyline1003" points="0,0"></polyline><path id="SvgjsPath1004" d="M0 0 "></path></svg><iframe name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" id="_hjRemoteVarsFrame" src="./Dashboard_files/box-dfc01efbdc94bb0936d9a35a502b0b64.html" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe></body></html>
